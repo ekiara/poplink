@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      width: 300px;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+    }
+    button, input {
+      width: 100%;
+      margin: 4px 0;
+      padding: 6px;
+      box-sizing: border-box;
+    }
+    #urlInput {
+      height: 60px;
+    }
+    .hidden {
+      display: none;
+    }
+    .set-item {
+      cursor: pointer;
+      padding: 6px;
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-top: 4px;
+    }
+    .set-item:hover {
+      background-color: #e0e0e0;
+    }
+  </style>
+</head>
+<body>
+  <div id="mainMenu">
+    <button id="addSetBtn">Add set</button>
+    <div id="setsList"></div>
+  </div>
+
+  <div id="addSetForm" class="hidden">
+    <input type="text" id="setName" placeholder="Set name" />
+    <textarea id="urlInput" placeholder="Enter one or more URLs (one per line)"></textarea>
+    <button id="saveSetBtn">Save set</button>
+    <button id="cancelBtn">Cancel</button>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
